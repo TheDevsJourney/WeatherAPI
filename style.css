@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.daysContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    width: 70%;
+    margin: 0 auto;
+    min-height: 180px; 
+}
+
+.day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(109, 207, 117);
+    position: relative;
+}
+
+.day p, h4{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.displayDay{
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(109, 207, 117);
+    color: white;
+    font-size: 1.2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weatherIcon{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+}
